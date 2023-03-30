@@ -6,9 +6,10 @@ public class Trigger1 : MonoBehaviour
 {
     [SerializeField] GameObject door;
 
+
     void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Pilaar 1")) return;
-        door.transform.position += new Vector3(0, 4, 0);
+        door.transform.position += new Vector3(5, 0, 0);
     }
 }

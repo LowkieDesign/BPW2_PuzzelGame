@@ -6,15 +6,20 @@ TagManager:
   tags:
   - Pilaar 1
   - Pilaar 2
+  - Ground
+  - FenceTrigger
+  - Pilaar 3
+  - Pilaar 4
+  - Pilaar 5
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
+  - WALLS ETC.
+  - Pillars
   - 
   - 
   - 
