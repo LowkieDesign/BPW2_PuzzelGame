@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
     public float walkSpeed;
-  
+
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(movement, Space.Self);
 
 
-        if (vertical != 0)
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("is_running", false);
             animator.SetBool("is_walking", false);
         }
+
+
     }
 
 
